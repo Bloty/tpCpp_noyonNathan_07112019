@@ -16,9 +16,13 @@ public:
 	void setX(float value);
 	void setY(float value);
 
+	//Membres
 	void deplacer(float fltX, float fltY);
 	float abscisse();
 	float ordonner();
+	void homothétie(float rapport);
+	void rotation(float fltangle);
+	float rho();
 
 	//constructeur
 	CPoint(float fltX, float fltY);

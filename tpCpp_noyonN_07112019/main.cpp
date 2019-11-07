@@ -1,23 +1,22 @@
 #include <iostream> //input output
 #include <cstdlib>
+#include <cmath>
 #include "CPoint.h"
 
 int main()
 {
-	//Exercice 2)-------------------------------
+	//Exercice 3)-------------------------------
 	//declatation
-	CPoint ptMonPoint(0, 5);
+	CPoint ptMonPoint(15, 10);
 
-	//affichage
-	std::cout << "X : " << ptMonPoint.abscisse() << std::endl;
-	std::cout << "X : " << ptMonPoint.ordonner() << std::endl;
+	//afficher l'homothétie
+	ptMonPoint.homothétie(5);
 
-	//déplacement
-	ptMonPoint.deplacer(5,5);
+	//rotation
+	ptMonPoint.rotation(90);
+	std::cout << "X : " << ptMonPoint.abscisse()<< std::endl;
+	std::cout << "Y : " << ptMonPoint.ordonner()<< std::endl;
 
-	//affichage
-	std::cout << "X : " << ptMonPoint.abscisse() << std::endl;
-	std::cout << "X : " << ptMonPoint.ordonner() << std::endl;
 
 	system("pause");
 
