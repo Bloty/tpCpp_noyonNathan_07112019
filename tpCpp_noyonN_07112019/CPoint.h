@@ -16,8 +16,9 @@ public:
 	void setX(float value);
 	void setY(float value);
 
-	void afficher();
 	void deplacer(float fltX, float fltY);
+	float abscisse();
+	float ordonner();
 
 	//constructeur
 	CPoint(float fltX, float fltY);

@@ -4,14 +4,20 @@
 
 int main()
 {
-	//Exercice 1)-------------------------------
-	CPoint ptMonPoint(10, 5);
+	//Exercice 2)-------------------------------
+	//declatation
+	CPoint ptMonPoint(0, 5);
 
-	ptMonPoint.afficher();
+	//affichage
+	std::cout << "X : " << ptMonPoint.abscisse() << std::endl;
+	std::cout << "X : " << ptMonPoint.ordonner() << std::endl;
 
+	//déplacement
 	ptMonPoint.deplacer(5,5);
 
-	ptMonPoint.afficher();
+	//affichage
+	std::cout << "X : " << ptMonPoint.abscisse() << std::endl;
+	std::cout << "X : " << ptMonPoint.ordonner() << std::endl;
 
 	system("pause");
 
